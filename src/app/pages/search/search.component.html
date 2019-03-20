@@ -1,0 +1,28 @@
+<div class="card text-white bg-primary mb-3">
+    <div class="card-header">Doctors</div>
+    <div class="card-body">
+        <h5 class="card-title">List of Doctors</h5>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Full Name</th>
+                    <th>Specialty</th>
+                    <th>Address</th>
+                    <th>Rating</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let doctor of doctors">
+                    <td>{{ doctor.id }}</td>
+                    <td>{{ doctor.fullname }}</td>
+                    <td>{{ doctor.specialty }}</td>
+                    <td>{{ doctor.address }}</td>
+                    <td>{{ doctor.rating }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
