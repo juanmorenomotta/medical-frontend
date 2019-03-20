@@ -13,8 +13,17 @@ import { CommentComponent } from './pages/comment/comment.component';
 import { RegisterCommentComponent } from './pages/register-comment/register-comment.component';
 
 import { SearchService } from './services/search.service';
+import { SpecialtysService } from './services/specialtys.service';
+import { CitiesService } from './services/cities.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { APP_ROUTING } from './app.routes';
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,10 +38,13 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    APP_ROUTING
   ],
   providers: [
-    SearchService
+    SearchService,
+    SpecialtysService,
+    CitiesService
   ],
   bootstrap: [AppComponent]
 })
