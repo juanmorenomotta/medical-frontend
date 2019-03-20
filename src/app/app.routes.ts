@@ -7,7 +7,7 @@ import { RegisterCommentComponent } from './pages/register-comment/register-comm
 
 
 const app_routes: Routes = [
-    { path: '*', component: SearchComponent},
+    { path: '', redirectTo: '/search', pathMatch: 'full' },
     { path: 'search', component: SearchComponent},
     { path: 'doctor/:id', component: DoctorComponent},
     { path: 'comments/doctor/:id', component: CommentComponent},
