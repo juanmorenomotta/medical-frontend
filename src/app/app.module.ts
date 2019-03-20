@@ -19,7 +19,7 @@ import { CitiesService } from './services/cities.service';
 import { HttpClientModule } from '@angular/common/http';
 import { APP_ROUTING } from './app.routes';
 
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -39,6 +39,7 @@ import { APP_ROUTING } from './app.routes';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [

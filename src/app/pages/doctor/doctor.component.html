@@ -1,3 +1,36 @@
-<p>
-  doctor works!
-</p>
+<h3>Doctor Detail</h3>
+<hr>
+
+<button [routerLink]="['/search/']" class="btn btn-outline-danger">
+  Comeback
+</button>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input name="fullname" type="text" value="doctor.fullname" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input name="rating" type="text" value="doctor.rating" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label for="specialty">Specialty</label>
+                <input name="specialty" type="text" value="doctor.specialty" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input name="address" type="text" value="doctor.address" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input name="city" type="text" value="doctor.city" class="form-control" readonly />
+            </div>
+        </form>
+
+    </div>
+</div>

@@ -54,6 +54,7 @@
                         <th>Address</th>
                         <th>Rating</th>
                         <th></th>
+                        <th></th>
 
                     </tr>
 
@@ -65,7 +66,8 @@
                         <td>{{ doctor.specialty }}</td>
                         <td>{{ doctor.address }}</td>
                         <td>{{ doctor.rating }}</td>
-                        <td></td>
+                        <td><a routerLink="/doctor/{{doctor.id}}" routerLinkActive="active">View</a></td>
+                        <td><a routerLink="/comments/doctor/{{doctor.id}}" routerLinkActive="active">Comments</a></td>
                     </tr>
                 </tbody>
             </table>

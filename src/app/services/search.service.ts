@@ -16,8 +16,8 @@ export class SearchService {
   constructor(public http: HttpClient) { }
 
   getDoctors(): Observable<Doctor[]> {
-    //return of(DOCTORS);
-    return this.http.get<Doctor[]>(this.urlEndPoint + '/doctor/1/1');
+    return of(DOCTORS);
+    //return this.http.get<Doctor[]>(this.urlEndPoint + '/doctor/1/1');
   }
 
 }
